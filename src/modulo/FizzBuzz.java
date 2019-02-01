@@ -26,27 +26,17 @@ import javax.swing.JOptionPane;
  **/
 public class FizzBuzz {
 	public static void main(String[] args) {
-		for (int i = 0; i < 4; i++) {
-			JOptionPane.showMessageDialog(null, "1");
-			JOptionPane.showMessageDialog(null, "2");
-			JOptionPane.showMessageDialog(null, "fizz");
-			JOptionPane.showMessageDialog(null, "4");
-			JOptionPane.showMessageDialog(null, "buzz");
-			JOptionPane.showMessageDialog(null, "fizz");
-			JOptionPane.showMessageDialog(null, "7");
-			JOptionPane.showMessageDialog(null, "8");
-			JOptionPane.showMessageDialog(null, "fizz");
-			JOptionPane.showMessageDialog(null, "buzz");
-			JOptionPane.showMessageDialog(null, "11");
-			JOptionPane.showMessageDialog(null, "fizz");
-			JOptionPane.showMessageDialog(null, "13");
-			JOptionPane.showMessageDialog(null, "14");
-			JOptionPane.showMessageDialog(null, "fizzbuzz");
-			JOptionPane.showMessageDialog(null, "16");
-			JOptionPane.showMessageDialog(null, "17");
-			JOptionPane.showMessageDialog(null, "fizz");
-			JOptionPane.showMessageDialog(null, "19");
-			JOptionPane.showMessageDialog(null, "buzz");
+		for (int i = 1; i < 21; i++) {
+			if ((i % 3 == 0) && (i % 5 == 0)) {
+				System.out.println(i + " fizzbuzz");
+			} else if ((i % 5 == 0)) {
+				System.out.println(i + " buzz");
+			} else if  ((i%3==0)){
+				System.out.println(i + " fizz");
+			} else {
+				System.out.println(i);
+
+			}
 		}
 	}
 }
